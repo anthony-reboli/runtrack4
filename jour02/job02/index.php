@@ -8,7 +8,7 @@
    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	</head>
 <body>
-<hearder>
+<header>
   <nav class="green">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo right">img</a>
@@ -20,7 +20,7 @@
       </ul>
     </div>
   </nav>
-</hearder>
+</header>
 </body>
 <section>
 	<form action="">
