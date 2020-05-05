@@ -8,10 +8,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
 <body>
-<hearder>
-  <nav class="blue">
+<header>
+  <nav class="green">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">Logo</a>
+      <a href="#" class="brand-logo right">img</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="">Accueil</a></li>
         <li><a href="">Inscription</a></li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
   </nav>
-</hearder>
+</header>
 </body>
 <section>
   <form action="">
@@ -46,19 +46,19 @@
     <input type="submit">
   </form>
 </section>
-  <footer class="page-footer blue">
+  <footer class="page-footer green">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Contenu</h5>
+                <h5 class="black-text">Contenu</h5>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Lien</h5>
+                <h5 class="black-text">Lien</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="">Accueil</a></li>
-                  <li><a class="grey-text text-lighten-3" href="">Inscription</a></li>
-                  <li><a class="grey-text text-lighten-3" href="">Connexion</a></li>
-                  <li><a class="grey-text text-lighten-3" href="">Recherche</a></li>
+                  <li><a class="black-text" href="">Accueil</a></li>
+                  <li><a class="black-text" href="">Inscription</a></li>
+                  <li><a class="black-text" href="">Connexion</a></li>
+                  <li><a class="black-text" href="">Recherche</a></li>
                 </ul>
               </div>
             </div>
