@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
   </head>
 <body>
-<hearder>
+<header>
   <nav>
         <li><a href="">Accueil</a></li>
         <li><a href="">Inscription</a></li>
         <li><a href="">Connexion</a></li>
         <li><a href="">Recherche</a></li>
   </nav>
-</hearder>
+</header>
 </body>
 <section>
   <form action="">
