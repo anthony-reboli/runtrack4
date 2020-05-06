@@ -36,7 +36,7 @@
 	<div class="row d-flex justify-content-around w-100">
 		<div class="card mb-4" style="width: 18rem; height: 25rem;">
 			<img src="pap2.png" class="img-fluid card-img-top" alt="...">
-			<div class="card-body col-md-12">
+			<div class="card-body">
 				<h5 class="card-title">Un Papillon</h5>
 				<p class="card-text">Un papillon, c'est un peu comme une chenille, mais avec des ailes. Ne pas ingérer</p>
 				<a href="" class="btn btn-primary">Commander votre propre papillon</a>
