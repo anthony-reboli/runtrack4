@@ -36,20 +36,20 @@
 	<div class="row d-flex justify-content-around w-100">
 		<div class="card mb-4" style="width: 18rem; height: 25rem;">
 			<img src="pap2.png" class="img-fluid card-img-top" alt="...">
-			<div class="card-body">
+			<div class="card-body col-md-12">
 				<h5 class="card-title">Un Papillon</h5>
 				<p class="card-text">Un papillon, c'est un peu comme une chenille, mais avec des ailes. Ne pas ingérer</p>
 				<a href="" class="btn btn-primary">Commander votre propre papillon</a>
 			</div>
 		</div>
-		<div class="jumbotron ">
+		<div class="jumbotron col-sm-6 ">
 			<h1 class="display-4">Bonjour, monde!</h1>
 			<p class="lead">Il existe plusieurs visions du terme : </p>
 			<p class="lead">le monde est la matière, l'espace et les phénomènes qui nous sont accessibles par les sens, l'expérience ou la raison.</p>
 			<p class="lead">Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environement plus ou moins naturel.</p>
 			<hr class="my-4">
 			<p>Le sens désigne l'univers dans son ensemble.</p>
-			<div class="row">
+			<div class="row col-sm-6">
 			<p class="lead">
 
 				<a class="btn btn-danger btn-lg" href="" role="button">Rebooter le Monde</a>
