@@ -1,4 +1,8 @@
+
+<div id="contreserv1" class="col-6 justify-content-center">
+	<h1>reservation</h1>
 <?php
+
 $requete="SELECT reservations.id,debut,fin,nom,prenom FROM reservations INNER JOIN utilisateurs ON utilisateurs.id = reservations.id_user where valide is NULL";
 	$requeteQ=mysqli_query($connexion,$requete);
 	
@@ -6,7 +10,7 @@ $requete="SELECT reservations.id,debut,fin,nom,prenom FROM reservations INNER JO
 
 	while($data= mysqli_fetch_assoc($requeteQ))
 					{
-						var_dump($data);
+						
 						$i=0;
 								$reservationid=$data['id'];
 								$nom=$data['nom'];
@@ -23,9 +27,9 @@ $requete="SELECT reservations.id,debut,fin,nom,prenom FROM reservations INNER JO
 						?>
 						<form method="post">
 						<input type="hidden" name="id" value="<?php echo $data['id'];?>" />
-						<input name='sup' value='Supprime' type='submit'>
-						<input name='yes' value='oui' type='submit'>
-						<input name='no' value='non' type='submit'>
+						<input name='sup' value='Supprime' type='submit' class="btn btn-danger">
+						<input name='yes' value='oui' type='submit' class="btn btn-success">
+						
 					
 					</form>
 					<?php
@@ -51,14 +55,7 @@ $requete="SELECT reservations.id,debut,fin,nom,prenom FROM reservations INNER JO
 								header("location:moderateur.php");
 							}
 
-							elseif(isset($_POST['no']))
-							{
-								$pid=$_POST['id'];
-								$requete2="UPDATE reservations SET valide = 'non' where id = $pid";
-								$requete2Q=mysqli_query($connexion,$requete2);
-								var_dump($requete2);
-								header("location:moderateur.php");
-							}
+
 						}
 
 
@@ -70,3 +67,5 @@ $requete="SELECT reservations.id,debut,fin,nom,prenom FROM reservations INNER JO
 
 
 					}
+					?>
+					</div>

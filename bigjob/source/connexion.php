@@ -9,6 +9,11 @@
     ?>
 </head>
 <body>
+    <header>
+    <?php
+    include("../include/header.php");
+    ?>
+  </header>
   <?php
   if (!isset($_SESSION["id"])) {
     ?>

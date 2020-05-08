@@ -122,3 +122,31 @@ ol{margin:0;padding:0;list-style-type:none}
 	.liP{
 		cursor: pointer;
 	}
+
+
+	/*moderateur*/
+ #nav{
+ 	height:148px;
+ }
+ #navbarnav{
+ 	justify-content: center;
+ 	font-size: 25px;
+ }
+	#containmodo{
+    height: 51%;
+    min-height: 50%;
+    text-align: center;
+    max-height: 50%;
+	}
+	#contreserv1{
+    overflow: scroll;
+    max-width: 49%;
+    max-height: 88%;
+
+	}
+
+		#contreserv2{
+    overflow: scroll;
+    max-width: 49%;
+    max-height: 88%;
+	}

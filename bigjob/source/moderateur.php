@@ -10,10 +10,25 @@
 	?>
 </head>
 <body>
-	<h1>reservation</h1>
-	<?php
-	include("../include/moderateur/reserv.php");
-	?>
-	
+	<header>
+		<?php
+		include("../include/header.php");
+		?>
+	</header>
+
+	<div id="containmodo"class="row">
+		
+		<?php
+		include("../include/moderateur/reserv.php");
+		include("../include/moderateur/accepter.php");
+
+		?>
+
+	</div>
+
+			<?php
+		include("../include/footer.php");
+		?>
 </body>
+	
 </html>
