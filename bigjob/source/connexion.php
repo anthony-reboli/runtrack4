@@ -45,8 +45,7 @@ if (isset($_POST['envoiconnexion']))
             var_dump($retour);
 
 
-           
-             
+                        
                  if (password_verify($_POST['password'], $retour[0][3]))
                  {
                  

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$("#searchBox").keyup(function () {
+	 $("#searchBox").keyup(function () {
 
 		var query = $("#searchBox").val();
 		console.log(query);
@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 
 		if (query.length > 0) {
+			console.log(query.length);
 			$.ajax(
 			{
 				url: '../JS/research.php',
@@ -25,7 +26,7 @@ $(document).ready(function () {
 			}
 				);
 							}
-	});
+	 });
 
 	$(document).on('click', 'li', function () {
 		var film = $(this).text();

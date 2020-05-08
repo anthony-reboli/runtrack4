@@ -9,10 +9,9 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 <head>
 	<meta charset="UTF-8">
 	<title>admin</title>
-	    <link rel="stylesheet" href="../styles/bigjob.css">
-	    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <?php
-    include("../include/link.php");
+
+     <?php
+     include("../include/link.php");
     ?>
 </head>
 <body>
@@ -62,11 +61,11 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 								<input type="submit" name="modifier">
 							</form>
 
-							        <script type="text/javascript">
-									<?php include("../JS/script.js");?>
+							       
+									 
 
 
-           							</script> 
+           							
 
 						
 							<?php

@@ -11,7 +11,7 @@
 
 			while ($data = $sql->fetch_array())
 			
-				$response .= "<a href=\"recherche.php?search=" . $data['nom'] . "\"><li>" . $data['nom'] . "</li></a>";
+				$response .= "<li class='liP'>" . $data['nom'] . "</li>";
 			
 			$response .= "</ul>";
 			
