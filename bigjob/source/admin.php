@@ -80,7 +80,7 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 								}
 						echo"</div>";
 
-					echo"<div id='contC'>";
+					echo"<div id='contA'>";
 						echo"<h1>Le staff</h1>";
 						$requete2="SELECT nom,prenom,rank FROM `utilisateurs` WHERE rank='admin' OR rank='modo'";
 						$requete2Q=mysqli_query($connexion,$requete2);
@@ -94,7 +94,7 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 									$rank=$data2['rank'];
 
 	  	
-									echo" <div class=\"ligneC\">";
+									echo" <div class=\"ligneA\">";
 		
 										echo "&nbsp|&nbsp nom:&nbsp $nom &nbsp|&nbsp ";
 										echo "&nbsp|&nbsp prenom :&nbsp $prenom &nbsp|&nbsp";
