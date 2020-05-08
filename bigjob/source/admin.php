@@ -10,6 +10,7 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 	<meta charset="UTF-8">
 	<title>admin</title>
 	    <link rel="stylesheet" href="../styles/bigjob.css">
+	    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <?php
     include("../include/link.php");
     ?>
@@ -50,7 +51,8 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 						echo"<h1>Modification de grade</h1>";
 							?>
 							<form method="post">
-								<input type=text name="name" placeholder="Pseudo">
+								<input name="search"type="text" placeholder="Recherche par nom" id="searchBox">
+								<div id="response"></div>
 								<select id="cars" name="rang1">
   									<option value="">Choisir LE RANG</option>
   									<option value="modo">Modérateur</option>
@@ -60,12 +62,18 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 								<input type="submit" name="modifier">
 							</form>
 
+							        <script type="text/javascript">
+									<?php include("../JS/script.js");?>
+
+
+           							</script> 
+
 						
 							<?php
 								if(isset($_POST['modifier']))
 								{
 									$rang1=$_POST['rang1'];
-									$nameF=$_POST['name'];
+									$nameF=$_POST['search'];
 									$requete3="UPDATE utilisateurs SET rank='$rang1' WHERE nom='$nameF'";
 									$requete3Q=mysqli_query($connexion,$requete3);
 									header("refresh:0");
