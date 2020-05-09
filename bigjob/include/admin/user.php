@@ -1,10 +1,12 @@
+	<div id='contadminuser' class='col-3'>"
 	<h1>Page d'administration</h1>
 	<?php
 	$requete="SELECT nom,prenom,rank FROM utilisateurs";
 	$requeteQ=mysqli_query($connexion,$requete);
-	
+					
+
 					echo"<h1>Les utilisateurs</h1>";
-					echo "<div id='contA'>";
+					
 
 					while($data= mysqli_fetch_assoc($requeteQ))
 					{

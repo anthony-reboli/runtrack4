@@ -1,5 +1,5 @@
 <?php
-echo"<div id='contA'>";
+echo"<div id='contadminstaff' class='col-3'>";
 						echo"<h1>Le staff</h1>";
 						$requete2="SELECT nom,prenom,rank FROM `utilisateurs` WHERE rank='admin' OR rank='modo'";
 						$requete2Q=mysqli_query($connexion,$requete2);

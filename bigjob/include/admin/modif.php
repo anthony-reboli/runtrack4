@@ -1,10 +1,10 @@
-echo"<div id='contB'>";
-						echo"<h1>Modification de grade</h1>";
-							?>
+<div id='contadminmodif' class='col-3'>
+						<h1>Modification de grade</h1>
+							
 							<form method="post">
 								<input name="search"type="text" placeholder="Recherche par nom" id="searchBox">
 								<div id="response"></div>
-								<select id="cars" name="rang1">
+								<select id="cars" class="form-control selcls" name="rang1">
   									<option value="">Choisir LE RANG</option>
   									<option value="modo">Modérateur</option>
   									<option value="user">Utilisateur</option>

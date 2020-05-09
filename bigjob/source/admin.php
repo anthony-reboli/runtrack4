@@ -20,11 +20,11 @@ $connexion =  mysqli_connect("localhost","root","","bigjob");
 		include("../include/header.php");
 		?>
 	</header>
-<div id="cont" class="row">
+<div id="cont" class="row justify-content-center">
 	<?php
 	include("../include/admin/user.php");
 	include("../include/admin/modif.php");
-	include("../include/admin/modif.php");
+	include("../include/admin/staff.php");
 
 						
 
