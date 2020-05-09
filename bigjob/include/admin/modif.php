@@ -10,7 +10,7 @@
   									<option value="user">Utilisateur</option>
   									<option value="admin">Admin</option>
 								</select>
-								<input type="submit" name="modifier">
+								<input type="submit" name="modifier" onclick="history.go(0)">
 							</form>
 
 							       
@@ -27,6 +27,6 @@
 									$nameF=$_POST['search'];
 									$requete3="UPDATE utilisateurs SET rank='$rang1' WHERE nom='$nameF'";
 									$requete3Q=mysqli_query($connexion,$requete3);
-									header("refresh:0");
+									
 								}
 						echo"</div>";

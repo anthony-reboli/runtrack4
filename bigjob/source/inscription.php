@@ -99,8 +99,9 @@ if (!isset($_SESSION["id"])) {
 
 
    </main>
-<footer>
-</footer>
+            <?php
+        include("../include/footer.php");
+        ?>
 
 </body>
 

@@ -1,7 +1,7 @@
 	<div id='contadminuser' class='col-3'>"
 	<h1>Page d'administration</h1>
 	<?php
-	$requete="SELECT nom,prenom,rank FROM utilisateurs";
+	$requete="SELECT id,nom,prenom,rank FROM utilisateurs";
 	$requeteQ=mysqli_query($connexion,$requete);
 					
 
@@ -22,6 +22,7 @@
 						echo "&nbsp|&nbsp nom:&nbsp $nom &nbsp|&nbsp ";
 						echo "&nbsp|&nbsp prenom :&nbsp $prenom &nbsp|&nbsp";
 						echo "&nbsp|&nbsp rang :&nbsp $rank &nbsp |&nbsp";
+						include("../include/admin/sup.php");
 						echo "</div>";
 		//echo"</section>";
 						$i++;

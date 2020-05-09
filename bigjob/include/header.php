@@ -9,13 +9,13 @@
         <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">connexion</a>
+        <a class="nav-link" href="connexion.php">connexion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">inscription</a>
+        <a class="nav-link" href="inscription.php">inscription</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="">Disabled</a>
       </li>
     </ul>
   </div>
