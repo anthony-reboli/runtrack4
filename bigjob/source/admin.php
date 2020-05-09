@@ -25,7 +25,8 @@ if($_SESSION['rang']=='admin')
 
 		<header>
 		<?php
-		include("../include/header.php");
+		include("../include/bar-nav.php");
+
 		?>
 	</header>
 <div id="cont" class="row justify-content-center">

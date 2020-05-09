@@ -11,7 +11,7 @@
 <body>
     <header>
     <?php
-    include("../include/header.php");
+    include("../include/bar-nav.php");
     ?>
   </header>
 

@@ -1,4 +1,9 @@
-		<nav id="nav" class="navbar navbar-expand-sm bg-light justify-content-center">
+		
+    <?php
+    if(!isset($_SESSION['mail']))
+    {
+      ?>
+    <nav id="nav" class="navbar navbar-expand-sm bg-light justify-content-center">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -6,9 +11,10 @@
   <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+
         <a class="nav-link" href="connexion.php">connexion</a>
       </li>
       <li class="nav-item">
@@ -20,3 +26,34 @@
     </ul>
   </div>
 </nav>
+
+<?php 
+}
+else
+    {
+      ?>
+          <nav id="nav" class="navbar navbar-expand-sm bg-light justify-content-center">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="deconnexion.php">deconnexion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="calendrier.php">Calendrier/a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<?php
+    }

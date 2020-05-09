@@ -10,9 +10,14 @@
 	?>
 </head>
 <body>
+	<?php
+	if($_SESSION['rang']=='admin' or $_SESSION['rang']=='modo' )
+	{
+		?>
 	<header>
 		<?php
-		include("../include/header.php");
+		include("../include/bar-nav.php");
+
 		?>
 	</header>
 
@@ -28,7 +33,13 @@
 
 			<?php
 		include("../include/footer.php");
+	}
+	else
+	{
+		header("location:index.php");
+	}
 		?>
+	
 </body>
 	
 </html>

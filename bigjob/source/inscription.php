@@ -25,7 +25,8 @@ if (!isset($_SESSION["id"])) {
 <body id="inscriptionbod">
     <header>
     	<?php
-	include("..\include\bar-nav.php");
+	include("../include/bar-nav.php");
+
 	?>
     </header>
     <main id="inscriptionmain">
@@ -87,11 +88,7 @@ if (!isset($_SESSION["id"])) {
     }
     else 
     {
-    ?>
-    <section id="notcon">
-      <p>Vous êtes déjà connecté impossible de s'inscrire !!</p>
-    </section>
-        <?php
+        header("location:index.php");
     }
     ?>
         </form>
